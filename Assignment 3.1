@@ -1,0 +1,14 @@
+hrs = input("Enter Hours:")
+h = float(hrs)
+rate = input("Enter rate per Hour:")
+r = float(rate)
+          
+
+if ((h < 0) or (r < 0)):
+    print ("Please use correct numbers")
+elif 0 < h < 40:
+    Total = h * r
+    print(str(Total))
+elif h>=40:
+    Total = 40*r + (h - 40)*r*1.5
+    print(str(Total))
