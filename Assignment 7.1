@@ -12,3 +12,13 @@ for line in fh:
     line = line.upper()
     print(line)
     
+    
+    
+ 
+# Use words.txt as the file name
+fname = input("Enter file name: ")
+fh = open(fname)
+for line in fh:
+    line = line.rstrip()
+# The line is a string variable and upper is a method within a string variable that returns us and uppercase version of that
+    print(line.upper())  
